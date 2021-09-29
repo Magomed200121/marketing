@@ -102,3 +102,87 @@ a
 
 .about__title
     font-size: 48px
+
+p
+    margin: 0
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+
+.expertise
+    padding: 140px 0 160px 0
+    &__title
+        margin-bottom: 90px
+    &__inner
+        display: flex
+        align-items: center
+        margin-bottom: 110px
+    &__info
+        width: 370px
+        flex: none
+        align-self: flex-start
+        margin-right: 30px
+        &-item
+            border-top: 2px solid black
+            padding: 2px 0 28px 0
+            margin-top: 7px
+            font-style: normal
+            font-weight: normal
+            font-size: 11px
+            line-height: 20px
+            letter-spacing: 1px
+            position: relative
+            span
+                position: absolute
+                right: 0
+                top: 0
+                &::before
+                    content: ''
+                    height: 2px
+                    position: absolute
+                    background-color: #F0F0F0
+                    right: 0
+                    top: -2px
+                    width: 100%
+    &__text
+        max-width: 770px
+        align-self: flex-start
+        p
+            margin-bottom: 25px
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 24px
+    &__items
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 370px
+        position: relative
+        padding-left: 85px
+        &::before
+            content: ''
+            width: 50px
+            height: 50px
+            position: absolute
+            left: 0
+            top: 0
+        &--desing::before
+            background-image: url('../img/desing.svg')
+        &--monitor::before
+            background-image: url('../img/monitor.svg')
+        &--marketing::before
+            background-image: url('../img/marketing.svg')
+        &-text
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 24px
+            color: #777777
+        &-title
+            margin-bottom: 18px
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 4.2875px
