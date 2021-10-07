@@ -10,6 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -171,31 +175,153 @@
         <div class="portfolio__top">
           <h2 class="title">Portfolio</h2>
           <div class="portfolio__filter">
-            <button class="portfolio__btn">ALL</button
-            ><button class="portfolio__btn">BRANDING</button
-            ><button class="portfolio__btn">DESIGN</button
-            ><button class="portfolio__btn">PHOTOGRAPHY</button
-            ><button class="portfolio__btn">ILLUSTRATION</button>
+            <button class="portfolio__btn" data-filter="all">ALL</button
+            ><button class="portfolio__btn" data-filter=".category-a">
+              BRANDING</button
+            ><button class="portfolio__btn" data-filter=".category-c">
+              DESIGN</button
+            ><button class="portfolio__btn" data-filter=".category-b">
+              PHOTOGRAPHY</button
+            ><button class="portfolio__btn" data-filter=".category-d">
+              ILLUSTRATION
+            </button>
           </div>
         </div>
       </div>
       <div class="portfolio__content">
-        <div class="portfolio__item"><img src="../img/1.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/2.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/3.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/4.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/5.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/6.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/7.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/8.jpg" alt="portfolioimg"></div>
-        <div class="portfolio__item"><img src="../img/9.jpg" alt="portfolioimg"></div>
+        <div class="portfolio__item mix category-all">
+          <img src="../img/1.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-d">
+          <img src="../img/2.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-a">
+          <img src="../img/3.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item category-d">
+          <img src="../img/4.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="../img/5.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="../img/6.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-a">
+          <img src="../img/7.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="../img/8.jpg" alt="portfolioimg" />
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="../img/9.jpg" alt="portfolioimg" />
+        </div>
       </div>
     </section>
-    <a class="portfolio__add" href="#">
-      VIEW MORE PROJECTS
-    </a>
-    <blockquote class="blockquote"> «Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+    <a class="portfolio__add" href="#"> VIEW MORE PROJECTS </a>
+    <blockquote class="blockquote">
+      «Неважно какую историю вы рассказываете, главное – сделайте своего
+      покупателя героем»
       <span class="author">Крис Броган</span>
     </blockquote>
+    <div class="portfolio__video">
+      <a
+        href="https://images.unsplash.com/photo-1633479585706-69b9f3cc34aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80"
+        class="portfolio__play"
+        data-foncybox="images"
+      >
+        <img src="./img/play-portfolio.svg" alt="portfolio__play" />
+      </a>
+    </div>
+    <div class="container">
+      <div class="portfolio__numbers">
+        <h5 class="portfolio__numbers-item">305<span>Web Designs</span></h5>
+        <h5 class="portfolio__numbers-item">220<span>Logo Designs</span></h5>
+        <h5 class="portfolio__numbers-item">52<span>Print Designs</span></h5>
+        <h5 class="portfolio__numbers-item">88<span>Mobile Apps</span></h5>
+      </div>
+    </div>
+
+    <section class="team">
+      <div class="container">
+        <h2 class="title">Our Team</h2>
+        <div class="team__inner">
+          <div class="team__item">
+            <img src="./img/maks.jpg" alt="maks" />
+            <h5 class="team__inner-title">МАКС</h5>
+            <p class="team__inner-text">CEO</p>
+          </div>
+          <div class="team__item">
+            <img src="./img/anya.jpg" alt="maks" />
+            <h5 class="team__inner-title">АНЯ</h5>
+            <p class="team__inner-text">Co-Founder</p>
+          </div>
+          <div class="team__item">
+            <img src="./img/mila.jpg" alt="maks" />
+            <h5 class="team__inner-title">МИЛА</h5>
+            <p class="team__inner-text">Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pircing">
+      <div class="container">
+        <h2 class="title">Pricing Plans</h2>
+        <div class="pircing__items">
+          <ul class="pircing__item">
+            <li class="pircing__item-name">Basic</li>
+            <li class="pircing__item-num" style="font-weight: 300;
+            font-size: 80px;
+            line-height: 109px;"><sup>$</sup>290</li>
+            <li>1 Logo Design</li>
+            <li>1 Website Design</li>
+            <li>1 Domain Free</li>
+            <li>3 Month License</li>
+            <li>1 GB Storage</li>
+            <li class="pircing__link"><a href="#">CHOOSE PLAN</a></li>
+          </ul>
+          <ul class="pircing__item">
+            <li class="pircing__item-name">Starter</li>
+            <li class="pircing__item-num" style="font-weight: 300;
+            font-size: 80px;
+            line-height: 109px;"><sup>$</sup>500</li>
+            <li>1 Logo Design</li>
+            <li>1 Website Design</li>
+            <li>1 Domain Free</li>
+            <li>3 Month License</li>
+            <li>1 GB Storage</li>
+            <li class="pircing__link"><a href="#">CHOOSE PLAN</a></li>
+          </ul>
+          <ul class="pircing__item">
+            <li class="pircing__item-name">Professional</li>
+            <li class="pircing__item-num" style="font-weight: 300;
+            font-size: 80px;
+            line-height: 109px;" ><sup>$</sup>1500</li>
+            <li>1 Logo Design</li>
+            <li>1 Website Design</li>
+            <li>1 Domain Free</li>
+            <li>3 Month License</li>
+            <li>1 GB Storage</li>
+            <li class="pircing__link"><a href="#">CHOOSE PLAN</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="fancybox/jquery.fancybox-1.3.4.pack.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
