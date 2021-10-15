@@ -494,4 +494,49 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
   line-height: 109px;
 }
+
+.menu__active {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .menu__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: black;
+    display: block;
+    transform: translateY(-200%);
+    text-align: center;
+    transition: all .3s;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .menu__link {
+    display: block;
+    padding: 25px 0 25px 0;
+    color: #fff;
+  }
+  .menu__active {
+    display: block;
+    margin-top: -35px;
+    cursor: pointer;
+  }
+}
+
+.popy {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 55px;
+    line-height: 81px;
+  }
+  .header__subtitle {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
