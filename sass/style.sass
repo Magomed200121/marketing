@@ -101,7 +101,7 @@ a
         bottom: 0
 
 .about__title
-    font-size: 48px
+    font-size: 60px
 
 p
     margin: 0
@@ -387,6 +387,16 @@ h1, h2, h3, h4, h5, h6
 .menu__active
     display: none
 
+.popy
+    transform: translateY(0)
+
+@media ( max-width: 1200px )
+    .about__inner
+        display: block
+    .about__text
+        max-width: 100%
+    .about__title
+
 @media ( max-width: 740px )
     .menu__list
         position: absolute
@@ -407,17 +417,15 @@ h1, h2, h3, h4, h5, h6
         display: block
         margin-top: -35px
         cursor: pointer
-
-.popy
-    transform: translateY(0)
-
-@media ( max-width: 1200px )
-    .about__inner
-        display: block
-    .about__text
-        max-width: 100%
-    .about__title
         margin-bottom: 20px
+    .expertise__inner
+        display: block
+    .expertise__items
+        display: block
+    .expertise__item
+        margin-bottom: 35px
+    .expertise__info
+        width: 100%
 
 @media ( max-width: 600px )
     .header__title
@@ -430,6 +438,16 @@ h1, h2, h3, h4, h5, h6
         line-height: 50px
         margin-bottom: 20px
         font-size: 40px
+
+@media ( max-width: 480px )
+    .expertise__item
+        padding-left: 60px
+        width: 64%
+
+@media ( max-width: 466px )
+    .expertise__item-text
+        width: 300px
+
 
 @media ( max-width: 420px )
     .header__title
