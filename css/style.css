@@ -529,6 +529,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
+@media (max-width: 1200px) {
+  .about__inner {
+    display: block;
+  }
+  .about__text {
+    max-width: 100%;
+  }
+  .about__title {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .header__title {
     font-size: 55px;
@@ -537,6 +549,20 @@ h1, h2, h3, h4, h5, h6 {
   .header__subtitle {
     font-size: 14px;
     line-height: 15px;
+  }
+  .title, .about__title {
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__title {
+    font-size: 44px;
+  }
+  .header__subtitle {
+    line-height: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
