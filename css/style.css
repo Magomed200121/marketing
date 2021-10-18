@@ -519,6 +519,9 @@ h1, h2, h3, h4, h5, h6 {
   .about__title {
     margin-bottom: 20px;
   }
+  .portfolio__content {
+    column-gap: 17px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -528,6 +531,15 @@ h1, h2, h3, h4, h5, h6 {
   .magic__inner {
     max-width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio__top {
+    display: block;
+  }
+  .portfolio__filter {
+    padding-top: 30px;
   }
 }
 
@@ -584,6 +596,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     font-size: 40px;
   }
+  .portfolio__btn {
+    margin-right: 10px;
+  }
+  .portfolio__btn {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -596,6 +615,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 466px) {
   .expertise__item-text {
     width: 300px;
+  }
+  .portfolio__content {
+    column-count: 2;
   }
 }
 
